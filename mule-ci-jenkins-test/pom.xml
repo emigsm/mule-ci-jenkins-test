@@ -25,7 +25,7 @@
 				<extensions>true</extensions>
 				<configuration>
         			<deploymentType>standalone</deploymentType>
-        			<muleHome>/home/emilianosan/Escritorio/mule-enterprise-standalone-3.9.0/bin</muleHome>
+        			<muleHome>/home/emilianosan/Escritorio/mule-enterprise-standalone-3.9.0/</muleHome>
         			<copyToAppsDirectory>true</copyToAppsDirectory>
         			<skip>true</skip>
     			</configuration>
