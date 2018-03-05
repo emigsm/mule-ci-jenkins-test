@@ -24,8 +24,8 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-        			<deploymentType>standalone</deploymentType>
-        			<muleHome>/home/emilianosan/Escritorio/mule-enterprise-standalone-3.9.0/</muleHome>
+        			<deploymentType>agent</deploymentType>
+        			<uri>http://localhost:7777/</uri>
         			<copyToAppsDirectory>true</copyToAppsDirectory>
         			<skip>true</skip>
     			</configuration>
