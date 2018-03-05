@@ -25,9 +25,8 @@
 				<extensions>true</extensions>
 				<configuration>
         			<deploymentType>agent</deploymentType>
-        			<uri>http://localhost:7777/</uri>
+        			<uri>http://0.0.0.0:7777/</uri>
         			<copyToAppsDirectory>true</copyToAppsDirectory>
-        			<skip>true</skip>
     			</configuration>
 			</plugin>
 			<plugin>
