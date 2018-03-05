@@ -28,6 +28,15 @@
         			<uri>http://0.0.0.0:7777/</uri>
         			<copyToAppsDirectory>true</copyToAppsDirectory>
     			</configuration>
+    			<executions>
+        			<execution>
+            			<id>deploy</id>
+            			<phase>deploy</phase>
+            			<goals>
+                			<goal>deploy</goal>
+            			</goals>
+        			</execution>
+    			</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
