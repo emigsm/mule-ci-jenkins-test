@@ -23,20 +23,24 @@
 				<artifactId>mule-app-maven-plugin</artifactId>
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-        			<deploymentType>agent</deploymentType>
-        			<uri>http://0.0.0.0:7777/</uri>
-        			<copyToAppsDirectory>true</copyToAppsDirectory>
+			</plugin>
+			<plugin>
+    			<groupId>org.mule.tools.maven</groupId>
+    			<artifactId>mule-maven-plugin</artifactId>
+    			<version>2.2.1</version>
+    			<configuration>
+        			<deploymentType>standalone</deploymentType>
+        			<muleHome>/home/emilianosan/Escritorio/mule-enterprise-standalone-3.9.0/</muleHome>
     			</configuration>
-    			<executions>
-        			<execution>
-            			<id>deploy</id>
-            			<phase>deploy</phase>
-            			<goals>
-                			<goal>deploy</goal>
-            			</goals>
-        			</execution>
-    			</executions>
+    		<executions>
+        		<execution>
+            		<id>deploy</id>
+            		<phase>deploy</phase>
+            		<goals>
+                		<goal>deploy</goal>
+            		</goals>
+        		</execution>
+    		</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
