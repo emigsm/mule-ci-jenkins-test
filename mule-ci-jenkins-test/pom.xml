@@ -23,9 +23,19 @@
 				<artifactId>mule-app-maven-plugin</artifactId>
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
-<!-- 				<configuration> -->
-<!--         			<copyToAppsDirectory>true</copyToAppsDirectory> -->
-<!--     			</configuration> -->
+				<configuration>
+                    <copyToAppsDirectory>false</copyToAppsDirectory>
+				<inclusions>
+                        <inclusion>
+                            <groupId>org.mule.modules</groupId>
+                            <artifactId>azure-storage-connector</artifactId>
+                        </inclusion>
+                    <inclusion>
+                            <groupId>org.mule.modules</groupId>
+                            <artifactId>mule-module-requester</artifactId>
+                        </inclusion>
+                    </inclusions>
+                </configuration>
 			</plugin>
 			<plugin>
     			<groupId>org.mule.tools.maven</groupId>
