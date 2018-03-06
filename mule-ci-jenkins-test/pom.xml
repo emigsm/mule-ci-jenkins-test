@@ -32,10 +32,13 @@
     			<artifactId>mule-maven-plugin</artifactId>
     			<version>2.2.1</version>
     			<configuration>
-        			<deploymentType>standalone</deploymentType>
-        			<muleHome>C:\Users\admin\Documents\mule-enterprise-standalone-3.9.0</muleHome>
-        			<copyToAppsDirectory>true</copyToAppsDirectory>
-    			</configuration>
+					<deploymentType>arm</deploymentType>
+					<username>MuleDeployer</username>
+					<password>MuleDeployer1</password>
+					<target>server-name</target>
+					<targetType>server</targetType>
+					<environment>Production</environment>
+				</configuration>
     		<executions>
         		<execution>
             		<id>deploy</id>
